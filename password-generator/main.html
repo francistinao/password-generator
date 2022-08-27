@@ -7,31 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25913df613.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Password Generator</title>
 </head>
 <body>
     <div class="hero">
         <div class="container">
+            <h1>Reload page to generate new password</h1>
             <div class="password-form">
+                <label for="password" class="password-title">Password</label>
+                
                 <div class="password-tab">
-                    <label for="password">Password</label>
                     <input type="text" id="password-label" class="password-label">
+                    <button class="copy-to-clip" id="copy-to-clipboard"><i class="fa-solid fa-clipboard"></i></button>
                 </div>
-                <div class="length">
-                    <label for="length">Length</label>
-                    <input type="text" id="length">
-                </div>
+                
                 <label for="settings">Settings</label>
+                
                 <div class="checkbox">
                     <input type="checkbox" class="number-box" id="number">
                     <p>Numbers</p>
                 </div>
+                
                 <div class="checkbox-two">
                     <input type="checkbox" class="char-box" id="special-char">
                     <p>Special Characters</p>
                 </div>
-                <button type="button" class="generate-pass">Generate Password</button>
+                
+                <button type="button" class="generate-pass" id="generate-pass">Generate Password</button>
             </div>
         </div>
     </div>
