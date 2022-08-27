@@ -9,6 +9,7 @@
     --pform-bg: #162b4b;
     --font-color: #7C8594;
     --btn-color: #BD9060;
+    --btn-color-light: #fac48b;
 }
 
 body {
@@ -22,9 +23,17 @@ body {
     max-width: 90vw;
 }
 
+h1 {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--input-bg);
+}
+
 .password-form {
     width: 320px;
-    height: 480px;
+    height: 380px;
     background-color: var(--pform-bg);
     margin: 0 auto;
     padding: 20px;
@@ -33,28 +42,42 @@ body {
     top: 100px;
 }
 
-.password-tab input {
-    margin-top: 10px;
-    width: 100%;
+.password-tab {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.password-label {
+    width: 80%;
     border-radius: 5px;
     background-color: var(--input-bg);
     height: 50px;
-    font-size: 20px;
-    padding-left: 8px;
+    font-size: 13px;
+    padding: 8px;
     border: none;
     color: #fff;
 }
 
-.length input {
-    margin-top: 10px;
-    width: 100%;
-    border-radius: 5px;
-    background-color: var(--input-bg);
+.copy-to-clip {
+    width: 20%;
     height: 50px;
-    font-size: 20px;
-    padding-left: 8px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
     border: none;
-    color: #fff;      
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+} 
+
+.copy-to-clip:hover {
+    transition: 0.3s;
+    background-color: var(--btn-color-light);
+} 
+
+.password-title {
+    margin-top: 15px;
 }
 
 input:focus {
@@ -63,12 +86,6 @@ input:focus {
 
 label {
     color: var(--font-color);
-}
-
-.password-tab {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
 }
 
 .length {
@@ -92,14 +109,14 @@ label {
     width: 20px;
     margin-left: 8px;
     border-radius: 5px;
-    border: none;
+    background-color: var(--font-color);
 }
 
 .generate-pass {
     width: 100%;
     height: 60px;
     background-color: var(--btn-color);
-    margin-top: 15px;
+    margin-top: 25px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
