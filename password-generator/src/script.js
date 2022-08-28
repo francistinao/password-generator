@@ -13,7 +13,7 @@ const tenSeconds = 10000;
 passwordValue.disabled = true
 
 generatePasswordBtn.onclick = () => {
-    length = document.getElementById('length-label').value
+    length = document.getElementById('lengthValue').innerText
     passwordGenerator();
 }
 
@@ -52,7 +52,7 @@ const passwordGenerator = () => {
     }
     console.log(passGenerated)
     //checks if length of the password is greater than 0 or not
-    if(length == 0) alert("Please enter length for password")
+    if(length == 0) alert("Please adjust the length for your password")
     //If the user generates another password, then it will generate a new password
     if(passGenerated > 1) {
         password = ""
