@@ -21,9 +21,12 @@
                     <input type="text" id="password-label" class="password-label">
                     <button class="copy-to-clip" id="copy-to-clipboard"><i class="fa-solid fa-clipboard"></i></button>
                 </div>
+
+                <label for="length-label">Length</label>
+               
                 <div class="length-tab">
-                    <label for="length-label">Length</label>
-                    <input type="text" id="length-label" class="length-label">
+                    <input type="range" id="length-label" class="length-label" min="0" max="50" oninput="lengthValue.innerText = this.value">
+                    <p id="lengthValue">0</p>
                 </div>
                 
                 <label for="settings">Settings</label>
