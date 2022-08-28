@@ -33,7 +33,7 @@ h1 {
 
 .password-form {
     width: 320px;
-    height: 380px;
+    height: 450px;
     background-color: var(--pform-bg);
     margin: 0 auto;
     padding: 20px;
@@ -58,6 +58,22 @@ h1 {
     padding: 8px;
     border: none;
     color: #fff;
+}
+
+.length-tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.length-label {
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    height: 50px;
+    font-size: 13px;
+    padding: 8px;
+    border: none;
+    color: #fff;
+    margin: 5px 0;
 }
 
 .copy-to-clip {
