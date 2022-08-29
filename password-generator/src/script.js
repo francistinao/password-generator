@@ -54,7 +54,7 @@ const passwordGenerator = () => {
     //checks if length of the password is greater than 0 or not
     if(length == 0) alert("Please adjust the length for your password")
     //If the user generates another password, then it will generate a new password
-    if(passGenerated > 1) {
+    if(passGenerated > 0) {
         password = ""
         generatePasswordBtn.innerText = "Generate New Password"
     }
